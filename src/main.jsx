@@ -75,22 +75,26 @@ function App() {
               한 번에 꺼내 쓰는 수원지사 운영 시스템
             </p>
 
-            <div className="search-box">
-              <input placeholder="화재보험 · 실손 · 상담화법 · 신입교육 검색" />
-            </div>
-          </div>
-
           <div className="calendar-card">
             <div className="card-label">OFFICIAL SCHEDULE</div>
             <h3>공식 일정</h3>
+
             <div className="calendar-mini">
               <div className="month">MAY 2026</div>
+
               <div className="days">
                 <span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span><span>일</span>
+
+                <em></em><em></em><em></em><em></em>
+                <b>1</b><b>2</b><b>3</b>
+
+                <b>4</b><b>5</b><b>6</b><b>7</b><b>8</b><b>9</b><b>10</b>
                 <b>11</b><b>12</b><b>13</b><b>14</b><b>15</b><b>16</b><b>17</b>
                 <b>18</b><b>19</b><b>20</b><b>21</b><b>22</b><b>23</b><b>24</b>
+                <b>25</b><b>26</b><b>27</b><b>28</b><b>29</b><b>30</b><b>31</b>
               </div>
             </div>
+            
             <p>노션 일정 DB 연동 예정</p>
           </div>
 

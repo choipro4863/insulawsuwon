@@ -70,7 +70,15 @@ function App() {
 
           <div className="hero-title">
             <p className="eyebrow">INSULAW SUWON CONTROL CENTER</p>
-            <h1>약관본부<br />수원지사</h1>
+            <div className="title-product-row">
+  <h1>약관본부<br />수원지사</h1>
+
+  <div className="core-product-card">
+    <div className="core-product-label">이달의 핵심 상품</div>
+    <img src="/images/core-product.jpg" alt="이달의 핵심 상품" />
+    <p>이번 달 집중 상담 상품</p>
+  </div>
+</div>
             <h2>수원지사 All-IN-ONE 시스템</h2>
             <p className="desc">
               메디컬 · 자료(이미지/영상) · 상담화법 · 거절처리까지<br />
@@ -122,30 +130,33 @@ function App() {
             <h2>약관본부 수원지사 MVP</h2>
           </div>
 
-          <div className="mvp-grid">
-            <div className="mvp-card">
-              <span>건수부문</span>
-              <h3>월간 MVP</h3>
-              <p>추후 이미지 또는 인물사진 삽입</p>
-            </div>
+<div className="mvp-card">
+  <span>건수부문</span>
+  <img className="mvp-image" src="/images/mvp-sample-1.jpg" alt="건수부문 MVP" />
+  <h3>월간 MVP</h3>
+  <p>월간 건수 MVP</p>
+</div>
 
-            <div className="mvp-card">
-              <span>보험료부문</span>
-              <h3>월간 MVP</h3>
-              <p>추후 이미지 또는 인물사진 삽입</p>
-            </div>
+<div className="mvp-card">
+  <span>보험료부문</span>
+  <img className="mvp-image" src="/images/mvp-sample-2.jpg" alt="보험료부문 MVP" />
+  <h3>월간 MVP</h3>
+  <p>월간 보험료 MVP</p>
+</div>
 
-            <div className="mvp-card gold">
-              <span>명예의전당</span>
-              <h3>최고 기록</h3>
-              <p>누적 건수 · 업적 · 신인 기록</p>
-            </div>
+<div className="mvp-card gold">
+  <span>명예의전당</span>
+  <img className="mvp-image" src="/images/hall-sample.jpg" alt="명예의전당" />
+  <h3>최고 기록</h3>
+  <p>누적 건수 · 업적 · 신인 기록</p>
+</div>
 
-            <div className="mvp-card gold">
-              <span>연도대상</span>
-              <h3>수원지사 AWARDS</h3>
-              <p>연간 우수자 기록</p>
-            </div>
+<div className="mvp-card gold">
+  <span>연도대상</span>
+  <img className="mvp-image" src="/images/award-sample.jpg" alt="연도대상" />
+  <h3>수원지사 AWARDS</h3>
+  <p>연간 우수자 기록</p>
+</div>
           </div>
         </section>
 

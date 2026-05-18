@@ -9,7 +9,7 @@ function App() {
       <aside className="side-menu">
         <div className="side-title">QUICK</div>
         <button>고지사항(정상체/유병자)</button>
-        <button>실버올인원플랜</button>
+        <button>실버올인원플랜(간병인,재가급여)</button>
         <button>한화손해-팜스 보장분석</button>
         <button>원수사전산 바로가기</button>
         <button>보케어연동 보험금청구</button>
@@ -71,7 +71,7 @@ function App() {
             <h1>약관본부<br />수원지사</h1>
             <h2>수원지사 All-IN-ONE 시스템</h2>
             <p className="desc">
-              메디컬 · 전산 · 자료 · 화법 · 상담까지<br />
+              메디컬 · 자료(이미지/영상) · 상담화법 · 거절처리까지<br />
               한 번에 꺼내 쓰는 수원지사 운영 시스템
             </p>
 
@@ -95,12 +95,12 @@ function App() {
           </div>
 
           <div className="action-grid">
-            <button>원수사정보<br /><small>카드/공시/설매</small></button>
+            <button>이달의영업방향<br /><small>절판/이벤트/컨셉</small></button>
             <button>상품인수기준<br /><small>회사별 기준</small></button>
             <button>KCD질병코드<br /><small>상병코드 검색</small></button>
             <button>전산바로가기<br /><small>원수사 전산</small></button>
             <button>보험로스쿨<br /><small>교육자료</small></button>
-            <button>고객자료<br /><small>이미지/PDF</small></button>
+            <button>고객관리자료<br /><small>보장분석표/증권전달</small></button>
           </div>
 
         </section>
@@ -119,7 +119,7 @@ function App() {
             </div>
 
             <div className="mvp-card">
-              <span>업적부문</span>
+              <span>보험료부문</span>
               <h3>월간 MVP</h3>
               <p>추후 이미지 또는 인물사진 삽입</p>
             </div>
@@ -144,7 +144,7 @@ function App() {
           <div className="system-grid">
             <div>메디컬 스터디</div>
             <div>고객전달자료</div>
-            <div>상담화법</div>
+            <div>상담화법(음성,영상,스크립트)</div>
             <div>설계안 샘플</div>
             <div>신입 커리큘럼</div>
             <div>다운로드센터</div>
@@ -153,7 +153,7 @@ function App() {
 
         <footer>
           <h3>찾아오는 곳</h3>
-          <p>수원시 영통구 반달로 42-1, 6층</p>
+          <p>수원시 영통구 반달로 42-1, 창화빌딩 6층 프라임에셋 약관본부 수원지사</p>
         </footer>
 
       </main>

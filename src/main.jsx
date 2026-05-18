@@ -16,7 +16,7 @@ function App() {
         <button>연금계산기(변액,비변액,일시납)</button>
         <button>단기납종신,연금</button>
         <button>메디컬</button>
-        <button>종수술,N대수술비 검색</button>
+        <button>원수사 소식지</button>
         <button>원수사 정보관리</button>
       </aside>
 
@@ -39,6 +39,7 @@ function App() {
               <span>신입교육</span>
               <span>메디컬</span>
               <span>상담화법</span>
+              <span>보상사례</span>              
             </div>
           </div>
 
@@ -46,7 +47,8 @@ function App() {
             자료실
             <div className="dropdown-menu">
               <span>고객전달자료</span>
-              <span>설계안 샘플</span>
+              <span>설계준비 출력물</span>
+              <span>설계안 샘플</span>              
               <span>다운로드</span>
             </div>
           </div>
@@ -106,7 +108,7 @@ function App() {
           <div className="action-grid">
             <button>이달의영업방향<br /><small>절판/이벤트/컨셉</small></button>
             <button>상품인수기준<br /><small>회사별 기준</small></button>
-            <button>KCD질병코드<br /><small>상병코드 검색</small></button>
+            <button>예외질환검색<br /><small>상병코드 검색</small></button>
             <button>전산바로가기<br /><small>원수사 전산</small></button>
             <button>보험로스쿨<br /><small>교육자료</small></button>
             <button>고객관리자료<br /><small>보장분석표/증권전달</small></button>

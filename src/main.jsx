@@ -10,13 +10,13 @@ function App() {
         <div className="side-title">QUICK</div>
         <button>고지사항(정상체/유병자)</button>
         <button>실버올인원플랜</button>
-        <button>한화손해-팜스연동 보장분석</button>
-        <button>전산 바로가기</button>
-        <button>보케어연동</button>
+        <button>한화손해-팜스 보장분석</button>
+        <button>원수사전산 바로가기</button>
+        <button>보케어연동 보험금청구</button>
         <button>연금계산기(변액,비변액,일시납)</button>
         <button>단기납종신,연금</button>
         <button>메디컬</button>
-        <button>수술비검색</button>
+        <button>종수술,N대수술비 검색</button>
         <button>원수사 정보관리</button>
       </aside>
 

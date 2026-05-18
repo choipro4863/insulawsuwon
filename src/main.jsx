@@ -75,6 +75,11 @@ function App() {
               한 번에 꺼내 쓰는 수원지사 운영 시스템
             </p>
 
+            <div className="search-box">
+              <input placeholder="화재보험 · 실손 · 상담화법 · 신입교육 검색" />
+            </div>
+          </div>
+
           <div className="calendar-card">
             <div className="card-label">OFFICIAL SCHEDULE</div>
             <h3>공식 일정</h3>
@@ -94,7 +99,7 @@ function App() {
                 <b>25</b><b>26</b><b>27</b><b>28</b><b>29</b><b>30</b><b>31</b>
               </div>
             </div>
-            
+
             <p>노션 일정 DB 연동 예정</p>
           </div>
 

@@ -5,63 +5,68 @@
 }
 
 body {
-  background: #071121;
+  background: #eef3f8;
   font-family: sans-serif;
-  color: #111;
+  color: #0b1628;
 }
 
 .app {
   min-height: 100vh;
 }
 
+/* 상단바 */
 .top-nav {
   position: fixed;
-  top: 0;
-  left: 180px;
-  right: 0;
-  height: 72px;
-  z-index: 20;
+  top: 18px;
+  left: 230px;
+  right: 28px;
+  height: 68px;
+  z-index: 30;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 42px;
-  background: rgba(255,255,255,0.82);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255,255,255,0.45);
+  padding: 0 28px;
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 24px;
+  box-shadow: 0 18px 50px rgba(20,40,80,0.12);
 }
 
 .logo {
+  font-size: 19px;
   font-weight: 900;
-  font-size: 20px;
-  color: #071121;
+  color: #0b2f6b;
 }
 
 .top-nav nav {
   display: flex;
-  gap: 14px;
+  gap: 10px;
 }
 
 .dropdown {
   position: relative;
-  padding: 14px 18px;
+  padding: 13px 16px;
   border-radius: 16px;
   font-weight: 800;
+  font-size: 14px;
+  color: #12233d;
   cursor: pointer;
 }
 
 .dropdown:hover {
-  background: white;
+  background: #eef5ff;
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 52px;
-  left: 0;
+  top: 48px;
+  right: 0;
   min-width: 170px;
   background: white;
   border-radius: 18px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.16);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.14);
   padding: 14px;
 }
 
@@ -75,107 +80,134 @@ body {
   color: #333;
 }
 
+/* 좌측 퀵메뉴 */
 .side-menu {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 180px;
-  height: 100vh;
-  z-index: 30;
-  background: rgba(5,16,35,0.94);
-  color: white;
-  padding: 24px 14px;
+  top: 18px;
+  left: 18px;
+  width: 190px;
+  height: calc(100vh - 36px);
+  z-index: 40;
+  background: linear-gradient(180deg, #ffffff, #eef5ff);
+  color: #0b1628;
+  padding: 20px 12px;
+  border-radius: 26px;
+  box-shadow: 0 22px 60px rgba(20,40,80,0.16);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 9px;
 }
 
 .side-title {
-  color: #39e0d0;
+  color: #0b5cff;
   font-weight: 900;
-  margin-bottom: 16px;
   letter-spacing: 2px;
+  margin: 0 0 10px 8px;
 }
 
 .side-menu button {
-  background: rgba(255,255,255,0.06);
-  color: white;
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 14px;
-  padding: 14px 12px;
+  background: rgba(255,255,255,0.85);
+  color: #17243a;
+  border: 1px solid rgba(20,70,140,0.08);
+  border-radius: 16px;
+  padding: 12px 11px;
   text-align: left;
-  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 800;
   cursor: pointer;
+  word-break: keep-all;
+  box-shadow: 0 8px 22px rgba(20,40,80,0.06);
 }
 
 .side-menu button:hover {
-  background: rgba(57,224,208,0.18);
+  background: #0b5cff;
+  color: white;
 }
 
+/* 본문 */
 .main-wrap {
-  margin-left: 180px;
+  margin-left: 220px;
 }
 
+/* 메인 히어로 */
 .hero-grid {
   min-height: 760px;
-  padding: 130px 80px 80px;
+  padding: 120px 44px 70px;
   display: grid;
-  grid-template-columns: 1.2fr 0.9fr 0.9fr;
-  gap: 34px;
-  align-items: center;
+  grid-template-columns: 1.05fr 0.8fr;
+  grid-template-areas:
+    "title calendar"
+    "actions actions";
+  gap: 26px;
+  align-items: stretch;
   background:
-    linear-gradient(rgba(7,17,33,0.70), rgba(7,17,33,0.82)),
+    linear-gradient(135deg, rgba(255,255,255,0.94), rgba(230,240,255,0.78)),
     url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2070");
   background-size: cover;
   background-position: center;
 }
 
+.hero-title {
+  grid-area: title;
+  background: rgba(255,255,255,0.76);
+  border: 1px solid rgba(255,255,255,0.9);
+  border-radius: 34px;
+  padding: 58px;
+  box-shadow: 0 28px 80px rgba(20,40,80,0.14);
+  backdrop-filter: blur(18px);
+}
+
 .eyebrow {
-  color: #39e0d0;
+  color: #0b5cff;
+  font-size: 13px;
   font-weight: 900;
-  margin-bottom: 14px;
+  letter-spacing: 1.4px;
+  margin-bottom: 18px;
 }
 
 .hero-title h1 {
-  font-size: 72px;
+  font-size: 68px;
   line-height: 0.98;
-  color: white;
-  margin-bottom: 24px;
+  color: #071121;
+  margin-bottom: 26px;
 }
 
 .hero-title h2 {
-  font-size: 28px;
-  color: #39e0d0;
+  font-size: 30px;
+  color: #0b5cff;
   margin-bottom: 24px;
 }
 
 .desc {
-  color: rgba(255,255,255,0.86);
+  color: #3c4a5f;
   font-size: 19px;
-  line-height: 1.7;
+  line-height: 1.75;
   margin-bottom: 34px;
 }
 
 .search-box input {
   width: 100%;
-  padding: 22px 24px;
-  border-radius: 22px;
-  border: 1px solid rgba(255,255,255,0.35);
-  background: rgba(255,255,255,0.92);
+  padding: 24px 26px;
+  border-radius: 24px;
+  border: 1px solid rgba(20,70,140,0.14);
+  background: white;
   font-size: 17px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.28);
+  box-shadow: 0 18px 50px rgba(20,40,80,0.12);
 }
 
+/* 캘린더 */
 .calendar-card {
-  background: rgba(255,255,255,0.88);
-  backdrop-filter: blur(14px);
-  border-radius: 30px;
-  padding: 30px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.28);
+  grid-area: calendar;
+  background: #071121;
+  color: white;
+  border-radius: 34px;
+  padding: 34px;
+  box-shadow: 0 28px 80px rgba(20,40,80,0.24);
 }
 
 .card-label {
-  color: #003b8b;
+  color: #73e8ff;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 1.5px;
@@ -184,14 +216,14 @@ body {
 
 .calendar-card h3 {
   font-size: 34px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .calendar-mini {
-  background: #071121;
-  color: white;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
   border-radius: 24px;
-  padding: 24px;
+  padding: 22px;
   margin-bottom: 18px;
 }
 
@@ -204,7 +236,7 @@ body {
 .days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
+  gap: 7px;
   text-align: center;
 }
 
@@ -214,47 +246,62 @@ body {
 }
 
 .days b {
-  background: rgba(255,255,255,0.1);
-  padding: 10px 0;
+  background: rgba(255,255,255,0.12);
+  padding: 9px 0;
   border-radius: 10px;
+  font-size: 13px;
 }
 
+.days em {
+  display: block;
+}
+
+/* 업무 버튼 */
 .action-grid {
+  grid-area: actions;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
 
 .action-grid button {
-  min-height: 100px;
-  border-radius: 22px;
-  border: 1px solid rgba(255,255,255,0.32);
-  background: rgba(255,255,255,0.16);
-  color: white;
+  min-height: 110px;
+  border-radius: 26px;
+  border: 1px solid rgba(20,70,140,0.12);
+  background: rgba(255,255,255,0.88);
+  color: #0b1628;
   font-size: 18px;
   font-weight: 900;
   cursor: pointer;
-  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 50px rgba(20,40,80,0.1);
 }
 
 .action-grid small {
-  color: rgba(255,255,255,0.72);
+  display: block;
+  margin-top: 8px;
+  color: #66748a;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .action-grid button:hover {
-  background: rgba(57,224,208,0.24);
+  background: #0b5cff;
+  color: white;
 }
 
+.action-grid button:hover small {
+  color: rgba(255,255,255,0.78);
+}
+
+/* MVP */
 .mvp-section {
-  background: #071121;
-  color: white;
-  padding: 90px 80px;
+  background: #eef3f8;
+  color: #071121;
+  padding: 90px 44px;
 }
 
 .section-head p {
-  color: #ffd15c;
+  color: #0b5cff;
   font-weight: 900;
   letter-spacing: 1.5px;
   margin-bottom: 10px;
@@ -268,42 +315,45 @@ body {
 .mvp-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 22px;
 }
 
 .mvp-card {
-  min-height: 330px;
-  border-radius: 28px;
+  min-height: 310px;
+  border-radius: 30px;
   padding: 30px;
-  background:
-    linear-gradient(145deg, rgba(255,255,255,0.14), rgba(255,255,255,0.04));
-  border: 1px solid rgba(255,255,255,0.18);
-  box-shadow: 0 30px 80px rgba(0,0,0,0.28);
+  background: white;
+  border: 1px solid rgba(20,70,140,0.08);
+  box-shadow: 0 22px 60px rgba(20,40,80,0.1);
 }
 
 .mvp-card span {
-  color: #ffd15c;
+  color: #0b5cff;
   font-weight: 900;
 }
 
 .mvp-card h3 {
-  font-size: 34px;
+  font-size: 32px;
   margin: 18px 0;
 }
 
 .mvp-card p {
-  color: rgba(255,255,255,0.74);
+  color: #64748b;
   line-height: 1.6;
 }
 
 .mvp-card.gold {
-  background:
-    radial-gradient(circle at top, rgba(255,209,92,0.32), rgba(255,255,255,0.05));
+  background: linear-gradient(145deg, #ffffff, #fff6df);
 }
 
+.mvp-card.gold span {
+  color: #b98400;
+}
+
+/* 시스템 */
 .system-section {
-  background: #f7f8fa;
-  padding: 90px 80px;
+  background: white;
+  padding: 90px 44px;
 }
 
 .system-section h2 {
@@ -318,16 +368,17 @@ body {
 }
 
 .system-grid div {
-  background: white;
-  border-radius: 24px;
+  background: #f7faff;
+  border-radius: 26px;
   padding: 34px;
   font-size: 24px;
   font-weight: 900;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.07);
+  border: 1px solid rgba(20,70,140,0.08);
 }
 
 footer {
-  background: white;
+  background: #071121;
+  color: white;
   padding: 70px;
   text-align: center;
 }
@@ -338,17 +389,17 @@ footer h3 {
 }
 
 footer p {
-  color: #666;
+  color: rgba(255,255,255,0.76);
   font-size: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .side-menu {
     display: none;
   }
 
   .top-nav {
-    left: 0;
+    left: 18px;
   }
 
   .top-nav nav {
@@ -361,20 +412,20 @@ footer p {
 
   .hero-grid {
     grid-template-columns: 1fr;
-    padding: 110px 24px 60px;
+    grid-template-areas:
+      "title"
+      "calendar"
+      "actions";
+    padding: 110px 20px 50px;
   }
 
   .hero-title h1 {
     font-size: 48px;
   }
 
+  .action-grid,
   .mvp-grid,
   .system-grid {
     grid-template-columns: 1fr;
-  }
-
-  .mvp-section,
-  .system-section {
-    padding: 60px 24px;
   }
 }

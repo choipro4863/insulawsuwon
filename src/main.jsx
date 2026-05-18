@@ -10,14 +10,14 @@ function App() {
       <aside className="side-menu">
         <div className="side-title">QUICK</div>
 
-        <button>공지사항<br />/ 경조사 / 운영자료</button>
-        <button>실손의료비<br />계산기</button>
-        <button>합산손해율<br />보장분석</button>
+        <button>고지사항<br />/ 정상체 / 유병자</button>
+        <button>실버올인원플랜<br />간병인 / 재가급여</button>
+        <button>한화손해-팜스<br />보장분석표</button>
         <button>원수사 전산<br />바로가기</button>
-        <button>메디컬</button>
-        <button>보험금 청구</button>
-        <button>종수술/N대수술비</button>
-        <button>원수사 자료실</button>
+        <button>메디컬스터디</button>
+        <button>보험금 청구(보케어)</button>
+        <button>연금계산기(변액/비변액/일시납)</button>
+        <button>원수사 소식지</button>
       </aside>
 
       <div className="main-wrap">
@@ -217,13 +217,13 @@ function App() {
             </button>
 
             <button>
-              KCD질병코드
-              <small>상병코드 검색</small>
+              상담화법
+              <small>영상,스크립트</small>
             </button>
 
             <button>
-              전산 바로가기
-              <small>원수사 전산</small>
+              예외질환검색
+              <small>정운봇</small>
             </button>
 
             <button>
@@ -325,12 +325,12 @@ function App() {
 
           <div className="system-grid">
 
-            <div>메디컬 시스템</div>
-            <div>보험금 청구 시스템</div>
-            <div>상담화법 시스템</div>
-            <div>원수사 비교 시스템</div>
-            <div>실손 계산기</div>
-            <div>상품 인수기준</div>
+            <div>교육일정</div>
+            <div>BMI계산기</div>
+            <div>Q&A</div>
+            <div>수수료 계산</div>
+            <div>영업규정집</div>
+            <div>본사연락처</div>
 
           </div>
 
